@@ -1,0 +1,14 @@
+<!--pages/product/product.wxml-->
+<view class='card'>
+ <form bindsubmit='checkForm'>
+  <view class='cell-item'>
+   <input type='text' placeholder='请输入商品编号' name='pno'></input>
+  </view>
+  <view class='cell-item'>
+   <input type='text' placeholder='评论内容' name='con'></input>
+  </view>
+  <view class='cell-item'>
+   <button formType='submit'>添加评论</button>
+  </view>
+ </form>
+</view>

@@ -1,0 +1,62 @@
+*{margin:0;padding:0;}
+/*整体*/
+section{background-image: url(../img/japan_pic/bg-image-clouds.jpg);width: 100%;background-repeat: no-repeat;display: flex;justify-content: center;padding-top: 60px;background-color: #d3e9f7;}
+
+
+
+/*左边侧边栏*/
+.aside{width:250px;height:2315px;}
+.map{width:254px;height:144px;background-image: url(../img/details_pic/btn-search-map-big.png);background-position: 0px;background-repeat: no-repeat;}
+.kwords{width:250px;height:112px;margin:20px 0;background-color: #fff;background:#fff;}
+.kwords p{font-size: 1.2em;margin-left: 10px;margin-top: 20px;}
+.kwords input:nth-child(2){padding:5px 0;margin-left: 10px;background: #EAEAEA;outline: none;border:0;}
+.kwords input:last-child{width:47px;height:26px;border-radius: 20px;border-radius: 20px;outline: none;background: #c65472;}
+.mudidi>div:first-child>a{display: block;border:5px solid #fff;border-bottom:10px solid #999;width:0;height:0;float:right;margin-right: 20px;margin-top:19px;}
+.up{transform: rotate(0deg);}
+.down{transform: rotate(180deg);}
+.mudidi>div:first-child>h3{font-weight: normal;float:left;}
+.mudidi>div:first-child{height:48px;line-height: 48px;}
+.mudidi{width:229px;padding-left:20px;background:#fff;margin-bottom: 20px;}
+.block{display: block;}
+.none{display:none;}
+.city li{padding:5px 0;}
+.city ul li{display: flex;justify-content:space-between;margin-right: 15px;}
+.city ul li:hover{background:#f3f3f3;}
+/*左边设施*/
+.sheshi{width:229px;padding-left:20px;background:#fff;margin-bottom: 20px;}
+.sheshi>div:first-child{height:48px;line-height: 48px;}
+.sheshi>div:first-child>h3{font-weight: normal;float:left;}
+.sheshi>div:first-child>a{display: block;border:5px solid #fff;border-bottom:10px solid #999;width:0;height:0;float:right;margin-right: 20px;margin-top:19px;}
+.sheshi div span:last-child{margin-right: 15px;float:right;}
+.sheshi .check .my-padding:hover{background:#f3f3f3;}
+/*左边风格部分*/
+.fengge{width:229px;padding-left:20px;background:#fff;margin-bottom: 20px;}
+.fengge>div:first-child{height:48px;line-height: 48px;}
+.fengge>div:first-child>h3{font-weight: normal;float:left;}
+.fengge>div:first-child>a{display: block;border:5px solid #fff;border-bottom:10px solid #999;width:0;height:0;float:right;margin-right: 20px;margin-top:19px;}
+.fengge div span:last-child{margin-right: 15px;float:right;}
+.fengge .type .my-padding:hover{background:#f3f3f3;}
+.my-padding{padding:5px 0;}
+
+
+/*右边主体*/
+.main{width:758px;margin-left:20px;}
+.fenlei ul{width:542px;float:left;height:40px;background:#fff;}
+.fenlei ul:first-child li{float:left;line-height: 40px;}
+.fenlei ul li a{padding:0 13px;display: block;color:#333;text-decoration: none;}
+.my-bg{background:#fff;}
+.my-bg1{background:#c65472;color:#fff;}
+.active{background:#cb5977;}
+.tabs{margin-top:20px;background:#fff;height:241px;}
+.tabs>img{width:320px;height:240px;}
+.tabs>div{float:right;width:436px;height:240px;}
+.tabs>div>p:first-child{font-size: 1.4em;margin-top: 10px;margin-left: 10px;}
+.tabs>div>p:last-child{font-size: 2.1em;border-top:1px dotted black;width:436px;height:61px;margin-top: 120px;}
+.tabs>div>p:last-child:hover{background-color:#cb5977;color:#fff;}
+.tabs>div>p:last-child>span{font-size: 0.5em;}
+#t1,#t2{margin-top: 40px;}
+#paixu{float:right;width:222px;display: flex;flex-wrap: wrap;}
+#paixu li{width:220px;height:40px;background:#fff;text-align: center;line-height: 40px; display: inline;    border-bottom: solid 1px #ddd;}
+#paixu li:hover{background:#f3f3f3;}
+#xiaonav span{display: block;border:5px solid #fff;border-top:5px solid gray;width:0;height:0;position: absolute;top: 18px;right: 30px;}
+#xiaonav{height:1px;display: flex;justify-content: space-between;}

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/register.css">
+ </head>
+ <body>
+  <header>
+			<img src="img/horizontal-white.png" id="zan_img">
+			<input type="text" id="header_search">
+			<input type="button" id="header_search_niu" value="点">
+		</header>
+		<nav>
+			<ul id="nav_left">
+				<li><a href="#" id="mudi">目的地</a></li>
+				<li><a href="#">预定行程</a></li>
+				<li><a href="#">折扣</a></li>
+				<li><a href="#">私人定制</a></li>
+				<li><a href="#">活动</a></li>
+			</ul>
+			<ul id="nav_right">
+				<li id="zhuce"><a href="http://127.0.0.1:2500/user_register.html">注册</a></li>
+				<li>|</li>
+				<li><a href="http://127.0.0.1:2500/user_login.html">登录</a></li>
+			</ul>
+		</nav>
+		<section>
+			<div id="section_big">
+				<div id="section_left">
+				</div>
+				<div id="section_right">
+					<p>
+				用户名：<input type="text" id="uname" onblur="checkUname()">
+				<span id="show"></span>
+			</p>
+			<p>
+				密码：<input type="password" id="upwd">
+			</p>
+			<p>
+				邮箱：<input type="text" id="email">
+			</p>
+			<p>
+				电话：<input type="text" id="phone">
+			</p>
+			<p>
+				真实姓名：<input type="text" id="user_name">
+			</p>
+			<p>
+				性别：<select id="gender">
+					<option value="1">男</option>
+					<option value="0">女</option>
+					<option value="2">不详</option>
+				</select>
+			</p>
+			<p>
+				<input type="button" value="提交" id="tijiao11" onclick="register()">
+			</p>
+		<script src="js/common.js"></script>
+		<script>
+			var isRegister=false;
+			//检查用户名是否重复
+			function checkUname(){
+				if($("uname").value==""){
+					$("show").innerHTML="用户名不能为空";
+							isRegister=false;
+							return;
+				}
+				var xhr=createXhr();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4&&xhr.status==200){
+						var result=xhr.responseText;
+						if(result=="1"){
+							$("show").innerHTML="用户名已存在";
+							isRegister=false;
+							
+						}else{
+							
+							$("show").innerHTML="用户名可用";
+							isRegister=true;
+						}
+					}
+				}
+				var uname=$("uname").value;
+				xhr.open("get","/user/selectUname?uname="+uname,true);
+				xhr.send(null);
+			}
+
+			//完成注册
+			function register(){
+				if(isRegister==true){
+					var xhr=createXhr();
+					xhr.onreadystatechange=function(){
+						if(xhr.readyState==4&&xhr.status==200){
+							var result=xhr.responseText;
+							alert('注册成功');
+						}
+					}
+					xhr.open("post","/user/register",true);
+					//设置消息头
+					xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+					var name=$("uname").value;
+					var upwd=$("upwd").value;
+					var email=$("email").value;
+					var phone=$("phone").value;
+					var user_name=$("user_name").value;
+					var gender=$("gender").value;
+					var msg="uname="+name+"&upwd="+upwd+"&email="+email+"&phone="+phone+"&user_name="+user_name+"&gender="+gender;
+					xhr.send(msg);
+				}else{
+					alert('请检查注册信息');
+				}
+			}
+		</script>
+				</div>
+				<div id="d1"><a href="http://localhost:2500/user_login.html">下一步</a></div>
+				<div id="d2"></div>
+				<div id="d3"></div>
+			</div>
+		</section>
+
+		<footer>
+			<div id="footer">
+				<ul class="footer_ul1">
+					<li class="z99">联系我们</li>
+					<li>客服热线： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#">400-605-9588</a>
+					</li>
+					<li>广告合作： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#">ad@zanadu.cn</a>
+					</li>
+					<li><a href="#">info@zanadu.cn</a></li>
+				</ul>
+				<ul class="footer_ul2">
+					<li class="z99">赞那度微信开通</li>
+					<li class="wechat">微信服务号</li>
+					<li>赞那度旅行顾问</li>
+					<li>旅行产品与服务</li>
+					<li class="wechat wete">微信订阅号</li>
+					<li>赞那度旅行人生</li>
+					<li>旅行体验&生活方式</li>
+				</ul>
+				<ul class="footer_ul3">
+					<li class="z99"><a href="#">关于赞那度</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">团队介绍</a></li>
+					<li><a href="#">媒体报道</a></li>
+					<li><a href="#">工作机会</a></li>
+				</ul>
+				<ul class="footer_ul4">
+					<li class="z99"><a href="#">技术支持</a></li>
+					<li><a href="#">隐私政策</a></li>
+					<li><a href="#">服务条款</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">合作伙伴</a></li>
+				</ul>
+			</div>
+			<div id="footer_bottom">
+				<ul>
+					<li>
+						<a href="http://weibo.com/zanaducn" target="_blank">
+							<img src="img/index_pic/1.png" id="footer_bottom_img1">
+						</a>
+					</li>
+					<li>
+						<a href="http://i.youku.com/u/UNjEwMzc2MjM2" target="_blank">
+							<img src="img/index_pic/2.png" id="footer_bottom_img2">
+						</a>
+					</li>
+					<li>
+						<a href="http://v.qq.com/vplus/zanadu" target="_blank">
+							<img src="img/index_pic/3.png" id="footer_bottom_img3">
+						</a>
+					</li>
+				</ul>
+				<div class="footer_bottom_left">欢迎来到赞那度，快来
+					<a class="social" href="http://127.0.0.1:2500/user_register.html" rel="nofollow">注册</a>
+				</div>
+				<div class="footer_bottom_right"><a href="#">切换到手机版浏览</a></div>
+				<img src="img/index_pic/zanaducn.jpg"  class="footer_bottom_img1">
+			</div>
+		</footer>
+		<div id="last">
+			<p>北京赞那度国际旅行社有限公司，旅行社业务经营许可证编号：L-BJ-CJ00559</p>
+			<p>Copyright ZANADU赞那度2011-2018|京ICP备 11041827号|京ICP证120221</p>
+			<img src="../img/index_pic/move-cloud-1.png" class="m111">
+			<img src="../img/index_pic/cloud-mask.png"class="m111">
+			<img src="../img/index_pic/vertical-black.png" id="last_img">
+		</div>
+		<div id="last_bottom">
+			
+		</div>
+ </body>
+</html>

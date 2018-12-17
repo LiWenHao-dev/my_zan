@@ -1,0 +1,70 @@
+<!--轮播图-->
+<view class="slider">
+ <swiper autoplay interval='3500' indicator-dots>
+  <swiper-item wx:for="{{img}}" wx:key="item.cid">
+    <image src="{{'http://localhost:2500/'+item.img}}"  lazy-load></image>
+  </swiper-item>
+ </swiper>
+</view>
+
+<!--九宫格-->
+<view class="index-nav">
+ <view  bindtap="handletapjumppinjie" class="nav-item" style='width:33.3%;height:100px;'>
+  <view style='background-image:url(/pages/img/icons.svg);background-position: 25px -780px;'></view>
+  <text>品介优选</text>
+ </view>
+
+ <view class="nav-item" style='width:33.3%;height:100px;'>
+  <view style='background-image:url(/pages/img/icons.svg);background-position: 25px -440px;'></view>
+  <text>热门目的地</text>
+ </view>
+
+ <view class="nav-item" style='width:33.3%;height:100px;'>
+  <view style='background-image:url(/pages/img/icons.svg);background-position: 25px 0px;'></view>
+  <text>赞品旅程</text>
+ </view>
+
+ <view class="nav-item" style='width:33.3%;height:100px;'>
+  <view style='background-image:url(/pages/img/icons.svg);background-position: 25px -50px;'></view>
+  <text>海外自由行</text>
+ </view>
+
+ <view class="nav-item" style='width:33.3%;height:100px;'>
+  <view style='background-image:url(/pages/img/icons.svg);background-position: 25px -200px;'></view>
+  <text>精品别墅</text>
+ </view>
+
+ <view class="nav-item" style='width:33.3%;height:100px;'>
+  <view style='background-image:url(/pages/img/icons.svg);background-position: 25px -249px;'></view>
+  <text>精选酒店</text>
+ </view>
+
+ <view class="nav-item" style='width:33.3%;height:100px;'>
+  <view style='background-image:url(/pages/img/icons.svg);background-position: 25px -297px;'></view>
+  <text>国内短假</text>
+ </view>
+
+ <view class="nav-item" style='width:33.3%;height:100px;'>
+  <view style='background-image:url(/pages/img/icons.svg);background-position: 25px -345px;'></view>
+  <text>私人订制</text>
+ </view>
+
+ <view class="nav-item" style='width:33.3%;height:100px;'>
+  <text style='margin-top:40px;margin-left:40px;display:block;'>...更多</text>
+ </view>
+</view>
+<!--九宫格下灰色框框-->
+<view class="divider"></view>
+<view>
+  <view>与众不同的赞那度</view>
+ <video src='http://localhost:2500/zanadu-brand.mp4' controls autoplay style='width:375px;'></video>
+ <view>为确保带给您最赞的旅行体验，我们汇聚了全中国最精英的旅行专家团队为您服务。 每一位旅行顾问都有丰富的全球旅行经验，他们热情洋溢，细致入微，一对一为您提供的咨询，
+            致力于为您打造独一无二的旅行体验，符合您的个性、兴趣、品味、预算。且我们从来不在品质上妥协。</view>
+</view>
+<view>
+ <video src='{{src}}'></video>
+</view>
+<view>
+ <button bindtap='selectVideo'>获取视频文件</button>
+</view>
+

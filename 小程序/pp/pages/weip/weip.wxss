@@ -1,0 +1,10 @@
+/* pages/exam03/exam03.wxss */
+/*公用样式*/
+text{font-size:15px;}
+
+.slider,.slider swiper,.slider image{height:478rpx;width:100%;}
+.index-nav{display:flex;flex-wrap: wrap;}
+.index-nav .nav-item{height: 200rpx;width:33%;box-sizing: border-box;border-right:1px solid gray;border-bottom: 1px solid gray;}
+.index-nav .nav-item view{background-repeat: no-repeat;background-size: 50px;width:100px;height:50px;margin-left:10px;margin-top:10px;}
+.index-nav .nav-item text{margin-left: 27px;}
+.index-nav .nav-item:nth-child(3),.index-nav .nav-item:nth-child(6),.index-nav .nav-item:nth-child(9){border-right:0 none;}

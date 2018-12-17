@@ -1,0 +1,9 @@
+<!--品介商品列表-->
+<view class="card" wx:for="{{list}}" wx:key="item.pid">
+ <!-- <text class='card-title'></text> -->
+ <text class='card-title'>{{item.title}}</text>
+ <image class='card-img' mode="aspectFill" lazy-load src="{{'http://localhost:2500/'+item.pic}}"></image>
+ <text class='card-price'>{{item.price}}/人起</text>
+ <text class='card-desc'>{{item.details}}</text>
+ <text class="card-read arrow">查看详情</text>
+</view>

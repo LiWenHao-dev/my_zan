@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="js/jquery.min.js">
+</head>
+<body>
+    <header class="header"></header>
+    <nav class="nav"></nav>
+    <section>
+        <div class="aside">
+            <div class="map"></div>
+            <div class="kwords">
+                <p>关键词</p>
+                <input type="text" placeholder="日本">
+                <input type="submit" value="更新">
+            </div>
+            <div class="mudidi">
+                <div>
+                    <h3>目的地</h3>
+                    <a href="#" class="up"></a>
+                </div>
+                <div class="city block">
+                    <ul>
+                        <!--数据库取-->
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="sheshi">
+                <div>
+                    <h3>设施</h3>
+                    <a href="#" class="up"></a>
+                </div>
+                <div class="check block">
+                    <div class="my-padding">
+                        <input type="checkbox">
+                        <span>无线网络</span>
+                        <span>7</span>
+                    </div>
+                    <div class="my-padding">
+                        <input type="checkbox">
+                        <span>健身房</span>
+                        <span>8</span>
+                    </div>
+                    <div class="my-padding">
+                        <input type="checkbox">
+                        <span>吸烟区</span>
+                        <span>5</span>
+                    </div>
+                    <div class="my-padding">
+                        <input type="checkbox">
+                        <span>适宜儿童</span>
+                        <span>6</span>
+                    </div>
+                    <div class="my-padding">
+                        <input type="checkbox">
+                        <span>商务中心</span>
+                        <span>3</span>
+                    </div>
+                    <div class="my-padding">
+                        <input type="checkbox">
+                        <span>泳池</span>
+                        <span>1</span>
+                    </div>
+                    <div class="my-padding">
+                        <input type="checkbox">
+                        <span>会讲中文的工作人员</span>
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fengge">
+                <div>
+                    <h3>风格</h3>
+                    <a href="#" class="up"></a>
+                </div>
+                <div class="type block">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="fenlei" style="position:relative;">
+                <div id="xiaonav">
+                    <ul id="tab">
+                    
+                    </ul>
+                    <ul id="paixu">
+                        <li>默认排序</li>
+                        <li style="display:none;">价格由低到高</li>
+                        <li style="display:none;">价格由高到低</li>
+                    </ul>
+                    <span data-toggle="brandlist"></span>
+                </div>
+                <script>
+                    
+                </script>
+                <div class="content">
+                    <div id="t1"></div>
+                    <div id="t2"></div>
+                    <div id="t3" style="margin-top:39px;"></div>
+                    <div id="t4" style="margin-top:39px;"></div>
+                    <div id="t5" style="margin-top:39px;"></div>
+                </div>
+                <script>
+                    
+                        
+                </script>
+            </div>
+        </div>
+    </section>
+    <footer class="footer"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+        $("[data-toggle=brandlist]").on("click",function(){
+            if($("#paixu").is(":has(:hidden)")){
+              $("#paixu>li").show();
+            }else{
+              $("#paixu>li:gt(0)").hide();
+            }
+          })
+        $("#paixu li:nth-child(2)").on("click",function(){
+            $(".content").children("#t5").show().siblings().hide();
+        })
+    </script>
+    <script src="js/header.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

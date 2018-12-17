@@ -1,0 +1,14 @@
+.my_bot:hover{
+    text-decoration: none;
+    border-bottom:3px solid green;
+}
+.my_f{
+    font-size: 24px;
+    color:#0066cc;
+}
+.my_b{
+    border-bottom: 1px solid #e6e6e6;
+}
+.my_t{
+    margin-top:80px;
+}

@@ -1,0 +1,23 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.arrow{display: flex;justify-content: space-between;align-items: center;}
+.arrow::after{content:"";
+  width:15rpx;
+  height:15rpx;
+  border-top:3rpx solid #aaa;
+  border-right:3rpx solid #aaa;
+  transform:rotate(45deg);}
+/*分割块*/
+.divider{height:20rpx;background-color:#f1f1f1;}
+
+.cell-item{border-bottom:1rpx solid #ddd;padding:20rpx 30rpx;}
+
+

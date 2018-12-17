@@ -1,0 +1,21 @@
+.footer_bg{
+    background-color:#2D6EB0;
+}
+footer{
+    font-size: 0.8rem;
+}
+footer ul li a{
+    color: #99D1FF;
+}
+footer ul li a:hover{
+    color:#fff;
+}
+.footer_bg2{
+    background-color: #1C4F84;
+    color:#279FDE;
+}
+@media screen and (max-width: 1024px) {
+    .h{
+        display: none;
+    }
+}

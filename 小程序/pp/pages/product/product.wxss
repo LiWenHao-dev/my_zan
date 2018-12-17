@@ -1,0 +1,2 @@
+/* pages/product/product.wxss */
+.card{background:#fff;border:1px solid #ddd;border-radius:20rpx;margin:50rpx 20rpx;display: flex;flex-direction: column;box-sizing:border-box;padding:10px;}

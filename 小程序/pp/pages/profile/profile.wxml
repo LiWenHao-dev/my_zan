@@ -1,0 +1,22 @@
+<view class="avatar">
+ <image src="{{isPlayingMusic?'http://localhost:2500/img/phone/music-stop.png':'http://localhost:2500/img/phone/music-start.png'}}" mode='aspectFill' lazy-load bindtap='audio'></image>
+</view>
+<view class='divider'></view>
+<view class='cell'>
+ <view class='cell-item'>个人资料</view>
+ <view class='cell-item'>详细信息</view>
+ <!-- <view class='cell-item'>
+  <image src='' mode='aspectFill' lazy-load></image>
+ </view> -->
+</view>
+<view class='divider'></view>
+<view class='cell'>
+ <view class='cell-item'>常见问题</view>
+ <view class='cell-item'>使用条款</view>
+ <view class='cell-item'>客服中心</view>
+ <view class='cell-item'>帮助与反馈</view>
+</view>
+<view class='divider'></view>
+<view class='cell'>
+ <view class='cell-item'>设置</view>
+</view>

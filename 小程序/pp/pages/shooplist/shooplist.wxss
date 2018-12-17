@@ -1,0 +1,16 @@
+/* pages/shooplist/shooplist.wxss */
+page{background-color:#fff;}
+.shop{padding:20rpx;border-bottom:1rpx solid #ddd;display: flex;position: relative;}
+.shop-img{width:160rpx;height: 160rpx;margin-right: 20rpx;}
+.shop-info{width:520rpx;display: flex;flex-direction: column;font-size: 12px;color:#666;line-height: 1.5;}
+.shop-title{font-size: 16px;color:#333;width: 380rpx; overflow: hidden;/*溢出隐藏*/ white-space: nowrap;/*不允许换行*/text-overflow: ellipsis;/*超出范围用...*/}
+.stop-star{position: absolute;right:20rpx;top:20rpx;}
+.star-after{color:#e2e2e2;}
+.star-before{
+  color:#f19e38;
+  position:absolute;
+  top:0;
+  left:0;
+  width:75%;
+  overflow: hidden;
+}

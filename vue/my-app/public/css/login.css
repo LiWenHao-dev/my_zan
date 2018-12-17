@@ -1,0 +1,51 @@
+*{margin:0;padding:0;}
+body{color:#384d66;font-size:14px;}
+
+a{text-decoration:none;color:#384d66;}
+
+nav a:hover{color:#af5576;}
+
+
+/*section*/
+section{width:100%;height:500px;background:#ececec;padding:60px 0;margin-top: 13px;}
+#section_big{width:1020px;height:467px;margin:30px auto;
+	overflow:hidden;position:relative;background:#fff;}
+#section_left{width:625px;height:465px;
+	background-image:url(../img/feather-login.jpg);
+	background-repeat:no-repeat;}
+#section_right{width:320px;height:367px;float:right;
+    position:absolute;top: 59px;left: 675px;}
+#yonghu{width:308px;height:86px;position:absolute;
+	top:50px;left:5px;text-align:center;line-height:50px;}
+#mima{width:308px;height:86px;position:absolute;
+	top:120px;left:5px;text-align:center;line-height:65px;}
+#denglu{width:308px;height:86px;position:absolute;
+	top:200px;left:5px;text-align:center;line-height:65px;}
+#sub{width:100px;height:40px;border-radius:40px;
+outline:none;background:#b74966;color:#fff;}
+
+#d1{width:100px;height:44px;background:#d78393;position:absolute;
+	left:905px;top:346px;line-height:44px;text-align:center;}
+#d1 a{color:#fff;}
+#d2{width:0;height:0;border:20px solid #d78393;position:absolute;
+left:880px;top:346px;
+	border-top-width:22px;
+	border-bottom-width:22px;
+	border-left-color:transparent;}
+#d3{
+	width:0px;height:0px;left:997px;top:390px;position:absolute;
+	border:4px solid transparent;
+	border-top-color:#6e201e;
+	border-left-color:#6e201e;
+}
+
+
+/*������*/
+
+#uname,#upwd{height:30px;}
+
+.wechat::after{
+	content:url(../img/index_pic/wechat111.png);
+	position:relative;top:5px;left:10px;
+}
+#section_right{background-image:url(../img/index_pic/22.png);}

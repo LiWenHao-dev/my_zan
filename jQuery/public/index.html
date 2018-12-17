@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title></title>
+    
+    <style>
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/horizontal-white.png" alt="">
+        
+        <input type="date" placeholder="退房日期">
+        <input type="date" placeholder="入住日期">
+        <input type="text" placeholder="酒店/住宿/预定" value="" id="val">
+        <button type="button" name="search">提交</button>
+    </div>
+    
+    <script>
+        $(".logo>input:nth-child(4)").on("focus",function(){
+            $(".logo>input:nth-child(2)").css("width","140");
+            $(".logo>input:nth-child(3)").css("width","140");
+        })
+    </script>
+    <div class="container-fluid">
+        <div id="demo" class="carousel" data-ride="carousel">
+            <!--指示符-->
+            <ul class="carousel-indicators">
+                <li class="active" data-target="#demo" data-slide-to="0"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+                <li data-target="#demo" data-slide-to="6"></li>
+                <li data-target="#demo" data-slide-to="7"></li>
+                <li data-target="#demo" data-slide-to="8"></li>
+                <li data-target="#demo" data-slide-to="9"></li>
+            </ul>
+            <!--轮播图片-->
+            <div class="carousel-inner">
+               <!-- <div class="carousel-item active">
+                    <img src="img/photo_7_7_448.jpg" alt="">
+                </div>-->
+            </div>
+            <!---箭头效果-->
+            <a href="#demo" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#demo" class="carousel-control-next ml" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <nav class="nav"></nav>
+    
+    <!--品介优选-->
+   <div class="my_bg">
+        <div style="clear: both;"></div>
+        <h2>品介优选 Featured Products</h2>
+        <div class="pinjie">
+            <!--<div>
+                <a href="#">
+                    <img src="img/photo_7_7_448.jpg" alt="">
+                    <div class="zz1">
+                        <p class="my_size">【轻奢小团】2019冬季芬兰瑞典9天7晚魔力欧若拉追光之旅——遥望璀璨星空，触碰梦幻极光</p>
+                        <h5 class="my_size yincang">穿越北部芬兰瑞典，玩转乐趣冰雪运动，来一次真正华丽的极地之旅</h5>
+                    </div>
+                </a>
+            </div>-->
+        </div>
+
+   </div>
+    <section>
+        <div style="clear: both;"></div>
+        <div class="dif">
+           <div> <a href="javascript:open2()"><img src="img/index_pic/play.png" alt="" class="video"></a></div>
+            <div class="reg" id="mp4">
+                <video src="zanadu-brand.mp4" controls width:"100%">
+
+                </video>
+            </div>
+            <script>
+                    function open2() {
+                        var str = document.getElementById("mp4");
+
+                        str.style.display = "block";
+
+                    }
+                    $("#mp4").on("click",function(){
+                        $("#mp4").css("display","none")
+                    })
+            </script>
+            <b>与众不同的zanadu赞那度</b>
+            <div class="dif_world">
+                <img src="img/index_pic/different-world-map.png" alt="">
+                <p>
+                    为确保带给您最赞的旅行体验，我们汇聚了全中国最精英的旅行专家团队为您服务。
+                    每一位旅行顾问都有丰富的全球旅行经验，他们热情洋溢，细致入微，一对一为您提供的咨询，
+                    致力于为您打造独一无二的旅行体验，符合您的个性、兴趣、品味、预算。且我们从来不在品质上妥协。
+                </p>
+                <a href="#">点击了解更多</a>
+            </div>
+        </div>
+        <h2>赞品旅程 Independent Signature Journeys</h2>
+        <div class="zanpin">
+            <!--  -->
+        </div>
+        <h2>海外自由行 Oversea Getaways</h2>
+        <div class="haiwai">
+            <!--  -->
+        </div>
+        <h2>精品别墅 Private Villas</h2>
+        <div class="bieshu">
+
+        </div>
+        <h2>国内短假 Domestic Vacation Packages</h2>
+        <div class="duanjia">
+
+        </div>
+        <h2>精选酒店 Hotel & Resort Collections</h2>
+        <div class="jiudian">
+
+        </div>
+    </section>
+    <footer class="footer"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/riproduct.css">
+    <title></title>
+    <style>
+    </style>
+</head>
+<body>
+<header class="header"></header>
+<nav class="nav"></nav>
+    <div class="map">
+        <div class="clear:both;"></div>
+    </div>
+<div id="my-p">
+    <iframe src="map.html" frameborder="0" style="width:1000px;height:420px;" scrolling="no"></iframe>
+</div>
+    <div class="section">
+        <h2><div class="my-h2"></div>
+            <div class="mudi moreHide">
+                
+            </div>
+        </h2>
+        <a href="#"><b>显示更多</b></a>
+    </div>
+    <script>
+        $(".section b").on("click",function(e){
+            e.preventDefault()
+            if($(".mudi").hasClass("moreHide")){
+                $(".mudi").removeClass("moreHide");
+                $(".mudi>div:gt(8)").show();
+                $(".section").css("height",1471)
+                $(this).html("收起");
+            }else{
+                $(".mudi").addClass("moreHide");
+                $(".mudi>div:gt(8)").hide();
+                $(".section").css("height",882)
+                $(this).html("显示更多");
+            }
+        })
+    </script>
+    <section>
+        <h3>
+            <div class="my-h2"></div>
+            <div class="zanpin">
+
+            </div>
+            <div class="zanzhi">
+                <div class="btn-left1">
+
+                </div>
+                <div class="btn-right1">
+    
+                </div>
+                <div class="zhishi">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <script>
+                $(".zanzhi>.btn-right1").click(function(e){
+                    e.stopPropagation();
+                    $(".zanpin>div>.my-posi").css("margin-left",-1006)
+                    $(".zanzhi>.btn-right1").css("display","none")
+                    $(".zanzhi>.btn-left1").css("display","block")
+                    $(".zanzhi>.zhishi a:last-child").css("background",function(){return "#cb5977";})
+                    $(".zanzhi>.zhishi a:first-child").css("background",function(){return "#fff";})
+                })
+                $(" .zanzhi>.btn-left1").click(function(){
+                    $(".zanpin>div>.my-posi").css("margin-left",0)
+                    $(".zanzhi>.btn-left1").css("display","none")
+                    $(".zanzhi>.btn-right1").css("display","block")
+                    $(".zanzhi>.zhishi a:first-child").css("background",function(){return "#cb5977";})
+                    $(".zanzhi>.zhishi a:last-child").css("background",function(){return "#fff";})
+                })
+            </script>
+        </h3>
+        <h3>
+            <div class="my-h22"></div>
+            <div class="qingshe">
+                <div>
+                    <img src="" alt="">
+                    <div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </h3>
+        <h3>
+            <div class="my-h222"></div>
+            <div class="haiwai">
+                
+            </div>
+            <div class="haizhi">
+                <div class="btn-left2">
+
+                </div>
+                <div class="btn-right2">
+    
+                </div>
+                <div class="zhishi">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <script>
+                $(".haizhi>.btn-right2").click(function(e){
+                    e.stopPropagation();
+                    $(".haiwai>div>.my-posi").css("margin-left",-1006)
+                    $(".haizhi>.btn-right2").css("display","none")
+                    $(".haizhi>.btn-left2").css("display","block")
+                    $(".haizhi>.zhishi a:last-child").css("background",function(){return "#cb5977";})
+                    $(".haizhi>.zhishi a:first-child").css("background",function(){return "#fff";})
+                })
+                $(".haizhi .btn-left2").click(function(){
+                    $(".haiwai>div>.my-posi").css("margin-left",0)
+                    $(".haizhi>.btn-left2").css("display","none")
+                    $(".haizhi>.btn-right2").css("display","block")
+                    $(".haizhi>.zhishi a:first-child").css("background",function(){return "#cb5977";})
+                    $(".haizhi>.zhishi a:last-child").css("background",function(){return "#fff";})
+                })
+            </script>
+        </h3>
+        <h3>
+            <div class="my-h2222"></div>
+            <div class="bieshu">
+                
+            </div>
+            <div class="biezhi">
+                <div class="btn-left3">
+                </div>
+                <div class="btn-right3">
+    
+                </div>
+                <div class="zhishi">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <script>
+                $(".biezhi>.btn-right3").click(function(){
+                    $(".bieshu>div>.my-posi").css("margin-left",-1006)
+                    $(".biezhi>.btn-right3").css("display","none")
+                    $(".biezhi>.btn-left3").css("display","block")
+                    $(".biezhi>.zhishi a:last-child").css("background",function(){return "#cb5977";})
+                    $(".biezhi>.zhishi a:first-child").css("background",function(){return "#fff";})
+                })
+                $(".biezhi>.btn-left3").click(function(){
+                    $(".bieshu>div>.my-posi").css("margin-left",0)
+                    $(".biezhi>.btn-left3").css("display","none")
+                    $(".biezhi>.btn-right3").css("display","block")
+                    $(".biezhi>.zhishi a:first-child").css("background",function(){return "#cb5977";})
+                    $(".biezhi>.zhishi a:last-child").css("background",function(){return "#fff";})
+                })
+            </script>
+        </h3>
+        <h3>
+            <div class="my-h22222"></div>
+            <div class="jiudian">
+                
+            </div>
+            <div class="jiuzhi">
+                <div class="btn-left4">
+
+                </div>
+                <div class="btn-right4">
+    
+                </div>
+                <div class="zhishi">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <script>
+                $(".jiuzhi>.btn-right4").click(function(){
+                    $(".jiudian>div>.my-posi").css("margin-left",-1006)
+                    $(".jiuzhi>.btn-right4").css("display","none")
+                    $(".jiuzhi>.btn-left4").css("display","block")
+                    $(".jiuzhi>.zhishi a:last-child").css("background",function(){return "#cb5977";})
+                    $(".jiuzhi>.zhishi a:first-child").css("background",function(){return "#fff";})
+                })
+                $(".jiuzhi>.btn-left4").click(function(){
+                    $(".jiudian>div>.my-posi").css("margin-left",0)
+                    $(".jiuzhi>.btn-left4").css("display","none")
+                    $(".jiuzhi>.btn-right4").css("display","block")
+                    $(".jiuzhi>.zhishi a:first-child").css("background",function(){return "#cb5977";})
+                    $(".jiuzhi>.zhishi a:last-child").css("background",function(){return "#fff";})
+                })
+            </script>
+        </h3>
+    </section>
+    <footer class="footer"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/riproduct.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

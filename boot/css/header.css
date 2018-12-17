@@ -1,0 +1,40 @@
+header img{
+    width:200px;height: 69px;
+}
+header .nav-hover:hover{
+    color:blue !important;
+}
+.hid li{
+    list-style: none;
+}
+.hid a:hover{
+    color: #fff !important;
+}
+.hidden{
+    display: none;
+}
+
+.hid{
+    position: relative;
+    z-index: 100;
+}
+nav li:hover .hidden{
+    display: block;
+}
+.hidden li a:hover{
+    color:#fff !important;
+}
+.bg1:hover{
+    display: block;
+    background: green !important;
+    padding: 10px;
+}
+@media screen and (max-width: 768px) {
+    .h{
+        display: none;
+    }
+}
+#myCar{
+    position:relative;
+    top:-50px;
+}

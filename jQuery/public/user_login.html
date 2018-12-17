@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Document</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="关键词"/>
+		<meta name="description" content="描述内容"/>
+		<style type="text/css"></style>
+		<script type="text/javascript"></script>
+		<link rel="stylesheet" href="css/login.css" />
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<header class="header"></header>
+		<nav class="nav"></nav>
+		<section>
+			<div id="section_big">
+				<div id="section_left">
+				</div>
+				<div id="section_right">
+					<div id="function">
+						<div id="yonghu">
+							用户名：<input type="text" placeholder="请输入用户名" id="uname">
+						</div>
+						<span id="show"></span><br>
+						<div id="mima">
+							密码：<input type="password" placeholder="请输入密码" id="upwd"><br>
+						</div>
+						<div id="denglu">
+							<input type="submit" value="登录" id="sub">
+						</div>
+						<script src="js/common.js"></script>
+						<script src="js/jquery-3.2.1.js"></script>
+						<script>
+							$(function(){
+								$("#sub").click(function(){
+									var uname=$("#uname").val();
+									console.log(uname);
+									var upwd=$("#upwd").val();
+									console.log(uname);
+									console.log(uname,upwd);
+									(async function(){
+										var res=await $.ajax({
+											url:"http://localhost:2500/user/signin",
+											type:"post",
+											data:{uname,upwd},
+											dataType:"json"
+										})
+										if(res.ok==0){alert(res.msg)}else{
+											alert("登陆成功");
+											if(location.search.startsWith("?back=")){
+												var url=location.search.slice(6)
+											}else{
+												var url="index.html"
+											}
+											location.href=url;
+										}
+										
+									})()
+								})
+							})
+						</script>
+					</div>
+				</div>
+				<div id="d1"><a href="#">下一步</a></div>
+				<div id="d2"></div>
+				<div id="d3"></div>
+			</div>
+		</section>
+		<footer class="footer"></footer>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/nav.js"></script>
+		<script src="js/footer.js"></script>
+	</body>
+</html>

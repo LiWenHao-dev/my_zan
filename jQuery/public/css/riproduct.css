@@ -1,0 +1,118 @@
+/*通用样式*/
+*{margin:0;padding:0;}
+a{color:#333;}
+.map{width:100%;height:630px;border:1px solid red;background: url("../img/japan_pic/60796c1ed42906d320d012abf71f4ec6.jpg");
+    background-repeat:no-repeat;background-size:100%;filter: blur(10px);}
+.map div:nth-child(2){width:1000px;height:430px;border:1px solid red;margin:0 auto;margin-top:90px;}
+.detail{background:#fff;width:235px;height:85px;}
+h2{width:1020px;height:662px;margin:0 auto;padding-top: 60px;font-size:1.8rem;}
+section{width:100%;color:#333;background:#e1ebf3;padding-bottom:60px;}
+h3{width:1020px;height:423px;margin:0 auto;padding-top: 60px;font-size:1.8rem;position: relative;}
+#my-p{position:relative;top:-484px;left:30%;}
+/*日本目的地*/
+.mudi>div:hover .detail{background: #cb5977; color:#fff;}
+.mudi img{width:236px;height:177px;}
+.mudi p{font-size:1rem;margin-left: 10px;margin-left:30px;}
+.mudi>div{width:235px;height:284px;float: left;margin-left: 15px;margin-top: 10px;}
+.section{margin-top:-410px;width:100%;height:882px;position:relative;background:url(../img/japan_pic/bg-image-clouds.jpg);}
+.section b{position: absolute;bottom:98px;left: 46%;border: 1px solid red;padding: 15px 50px;border-radius: 35px;}
+
+/*赞品旅程楼层布局*/
+.zanpin{height:350px;display: flex;overflow:hidden;}
+.zanpin>div>.my-posi{width:2010px;height:350px;transition: 1s;}
+.zanpin>div{float:left;margin-left:15px;margin-top:10px;width:320px;height:350px;}
+.zanpin>div img{width:320px;height:240px;}
+.zanpin>div div{width:320px;height:110px;}
+.zanpin>div div p{font-size:1rem;}
+.zanpin>div:hover .detail{background: #cb5977;}
+.zanpin>div:hover .detail>a{ color:#fff;}
+
+/*赞品楼层指示代码*/
+.zanzhi>.btn-left1{background:url(../img/slideshow-nav-sprite.png);width:66px;height:66px;position: absolute;background-position: -88px 2px;
+    top:242px;left: -15px;display: none;}
+.zanzhi>.btn-left1:hover{background-position: -88px -64px;}
+.zanzhi>.btn-right1{background:url(../img/slideshow-nav-sprite.png);width:66px;height:66px;position: absolute;background-position: -154px 2px; top:242px;left:978px;}
+.zanzhi>.btn-right1:hover{background-position: -154px 70px;}
+.zanzhi>.zhishi{width:34px;height:12px;position: relative;top: 237px;left: 480px;}
+.zanzhi>.zhishi a{width:12px;height:12px;border-radius:50%;display: block;position: absolute;top:-222px;z-index: 2;}
+.zanzhi>.zhishi a:first-child{background:#cb5977;}
+.zanzhi>.zhishi a:last-child{left:20px;background: #fff;}
+
+/*轻奢小团楼层布局*/
+.qingshe>div:hover .detail{background: #cb5977;}
+.qingshe>div:hover .detail>a{ color:#fff;}
+.qingshe>div{float:left;margin-left:15px;margin-top:10px;}
+.qingshe>div img{width:320px;height:240px;}
+.qingshe>div div{width:320px;height:110px;}
+.qingshe>div div p{font-size:1rem;}
+.qingshe>div:last-child img{width:660px;}
+.qingshe>div:last-child div{width:660px;height:110px;}
+
+/*海外自由行*/
+.haiwai{height:350px;display: flex;overflow:hidden;}
+.haiwai>div>.my-posi{width:2010px;height:350px;transition: 1s;}
+.haiwai>div{float:left;margin-left:15px;margin-top:10px;width:320px;height:350px;}
+.haiwai>div:hover .detail{background: #cb5977;}
+.haiwai>div:hover .detail>a{ color:#fff;}
+.haiwai>div{float:left;margin-left:15px;margin-top:10px;}
+.haiwai>div img{width:320px;height:240px;}
+.haiwai>div div{width:320px;height:110px;}
+.haiwai>div div p{font-size:1rem;}
+
+/*海外楼层指示*/
+.haizhi>.btn-left2{background:url(../img/slideshow-nav-sprite.png);width:66px;height:66px;position: absolute;background-position: -88px 2px;
+    top:242px;left: -15px;display: none;}
+.haizhi>.btn-left2:hover{background-position: -88px -64px;}
+.haizhi>.btn-right2{background:url(../img/slideshow-nav-sprite.png);width:66px;height:66px;position: absolute;background-position: -154px 2px;      top:242px;left:978px;}
+.haizhi>.btn-right2:hover{background-position: -154px 70px;}
+.haizhi>.zhishi{width:34px;height:12px;position: relative;top: 237px;left: 480px;}
+.haizhi>.zhishi a{width:12px;height:12px;border-radius:50%;display: block;position: absolute;top:-222px;z-index: 2;}
+.haizhi>.zhishi a:first-child{background:#cb5977;}
+.haizhi>.zhishi a:last-child{left:20px;background: #fff;}
+
+/*别墅*/
+.bieshu{height:350px;display: flex;overflow:hidden;}
+.bieshu>div>.my-posi{width:2010px;height:350px;transition: 1s;}
+.bieshu>div{float:left;margin-left:15px;margin-top:10px;width:320px;height:350px;}
+.bieshu>div{float:left;margin-left:15px;margin-top:10px;}
+.bieshu>div img{width:320px;height:240px;}
+.bieshu>div div{width:320px;height:110px;}
+.bieshu>div div p{font-size:1rem;}
+.bieshu>div:hover .detail{background: #cb5977;}
+.bieshu>div:hover .detail>a{ color:#fff;}
+
+/*别墅楼层指示*/
+.biezhi>.btn-left3{background:url(../img/slideshow-nav-sprite.png);width:66px;height:66px;position: absolute;background-position: -88px 2px;
+    top:242px;left: -15px;display: none;}
+.biezhi>.btn-left3:hover{background-position: -88px -64px;}
+.biezhi>.btn-right3{background:url(../img/slideshow-nav-sprite.png);width:66px;height:66px;position: absolute;background-position: -154px 2px;
+    top:242px;left:978px;}
+.biezhi>.btn-right3:hover{background-position: -154px 70px;}
+.biezhi>.zhishi{width:34px;height:12px;position: relative;top: 237px;left: 480px;}
+.biezhi>.zhishi a{width:12px;height:12px;border-radius:50%;display: block;position: absolute;top:-222px;z-index: 2;}
+.haizhi>.zhishi a:first-child{background:#cb5977;}
+.haizhi>.zhishi a:last-child{left:20px;background: #fff;}
+
+
+/*酒店*/
+.jiudian{height:350px;display: flex;overflow:hidden;}
+.jiudian>div>.my-posi{width:2010px;height:350px;transition: 1s;}
+.jiudian>div{float:left;margin-left:15px;margin-top:10px;width:320px;height:350px;}
+.jiudian>div{float:left;margin-left:15px;margin-top:10px;}
+.jiudian>div img{width:320px;height:240px;}
+.jiudian>div div{width:320px;height:110px;}
+.jiudian>div div p{font-size:1rem;}
+.jiudian>div:hover .detail{background: #cb5977;}
+.jiudian>div:hover .detail>a{ color:#fff;}
+
+/*酒店楼层指示*/
+.jiuzhi>.btn-left4{background:url(../img/slideshow-nav-sprite.png);width:66px;height:66px;position: absolute;background-position: -88px 2px;
+    top:242px;left: -15px;display: none;}
+.biezhi>.btn-left4:hover{background-position: -88px -64px;}
+.jiuzhi>.btn-right4{background:url(../img/slideshow-nav-sprite.png);width:66px;height:66px;position: absolute;background-position: -154px 2px;
+    top:242px;left:978px;}
+.jiuzhi>.btn-right4:hover{background-position: -154px 70px;}
+.biezhi>.zhishi{width:34px;height:12px;position: relative;top: 237px;left: 480px;}
+.biezhi>.zhishi a{width:12px;height:12px;border-radius:50%;display: block;position: absolute;top:-222px;z-index: 2;}
+.jiuzhi>.zhishi a:first-child{background:#cb5977;}
+.jiuzhi>.zhishi a:last-child{left:20px;background: #fff;}

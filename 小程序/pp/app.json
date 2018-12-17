@@ -1,0 +1,51 @@
+{
+  "pages": [
+    
+    "pages/weip/weip",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/pinjie/pinjie",
+    "pages/profile/profile",
+    "pages/product/product",
+    "pages/shooplist/shooplist"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#316c9b",
+    "navigationBarTitleText": "赞那度",
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#316c9b",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/weip/weip",
+        "text": "首页",
+        "iconPath": "pages/img/tabs/home.png",
+        "selectedIconPath": "pages/img/tabs/home-active.png"
+      },                                                                                                                                                                                                                                                                                                                                                                                            
+      {
+        "pagePath": "pages/shooplist/shooplist",
+        "text": "商品",
+        "iconPath": "pages/img/tabs/contact.png",
+        "selectedIconPath": "pages/img/tabs/contact-active.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "评论",
+        "iconPath": "pages/img/tabs/contact.png",
+        "selectedIconPath": "pages/img/tabs/contact-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "pages/img/tabs/contact.png",
+        "selectedIconPath": "pages/img/tabs/contact-active.png"
+      }
+    ]
+  }
+}
